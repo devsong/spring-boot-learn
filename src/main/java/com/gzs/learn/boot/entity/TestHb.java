@@ -2,19 +2,30 @@ package com.gzs.learn.boot.entity;
 
 import java.util.Date;
 
-public class TestHb {
+/**
+ * @author guanzhisong
+ * @date 2017-02-10 10:51:11
+ */
+public class TestHb implements java.io.Serializable {
+    // 主键id,自增
     private Integer id;
 
+    // 地址
     private String address;
 
+    // 年龄
     private Integer age;
 
+    // 创建时间
     private Date createTime;
 
+    // 名称
     private String name;
 
+    // 电话
     private String phone;
 
+    // 更新时间
     private Date updateTime;
 
     public Integer getId() {

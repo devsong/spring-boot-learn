@@ -17,6 +17,7 @@ public class Generator {
 	public static void main(String[] args)
 			throws IOException, XMLParserException, InvalidConfigurationException, SQLException, InterruptedException {
 		List<String> warnings = new ArrayList<String>();
+
 		boolean overwrite = true;
 		InputStream inputStream = Generator.class.getResourceAsStream("/generator.xml");
 		ConfigurationParser cp = new ConfigurationParser(warnings);
