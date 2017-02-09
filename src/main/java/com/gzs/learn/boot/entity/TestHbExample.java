@@ -64,6 +64,12 @@ public class TestHbExample {
         distinct = false;
     }
 
+    /**
+     * @author guanzhisong
+ * @date Thu Feb 09 21:22:49 CST 2017
+     *
+     * @mbg.generated Thu Feb 09 21:22:49 CST 2017
+     */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
 
@@ -563,6 +569,12 @@ public class TestHbExample {
         }
     }
 
+    /**
+     * @author guanzhisong
+ * @date Thu Feb 09 21:22:49 CST 2017
+     *
+     * @mbg.generated Thu Feb 09 21:22:49 CST 2017
+     */
     public static class Criterion {
         private String condition;
 
