@@ -11,17 +11,17 @@
 
 	<!-- 后端接口服务 -->
 	<dubbo:reference id="backEndService"
-		interface="com.gomegj.exw.invoice.dubbo.DubboBackendOrderService"
+		interface="com.gomegj.exw.order.inf.dubbo.DubboBackendOrderService"
 		registry="zk" loadbalance="random" version="1.1.0" check="true"
 		retries="0" />
 
 	<!-- 发票接口服务 -->
 	<dubbo:reference id="invoiceService"
-		interface="com.gomegj.exw.invoice.dubbo.DubboInvoiceService" registry="zk"
+		interface="com.gomegj.exw.order.inf.dubbo.DubboInvoiceService" registry="zk"
 		loadbalance="random" version="1.1.0" check="true" retries="0" />
 
 	<!-- 订单接口服务 -->
 	<dubbo:reference id="orderService"
-		interface="com.gomegj.exw.invoice.dubbo.DubboOrderService" registry="zk"
+		interface="com.gomegj.exw.order.inf.dubbo.DubboOrderService" registry="zk"
 		loadbalance="random" version="1.1.0" check="true" retries="0" />
 </beans>

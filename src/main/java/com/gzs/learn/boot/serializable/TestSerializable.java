@@ -38,9 +38,6 @@ public class TestSerializable {
 
 @Data
 class Serializable implements java.io.Serializable {
-	private static final long serialVersionUID = 2L;
-
 	private String name;
-
-	// private String test;
+	private String test;
 }
