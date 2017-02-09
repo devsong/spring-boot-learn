@@ -1,7 +1,7 @@
-package com.gzs.learn.boot.jpa;
+package com.gzs.learn.boot;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +18,9 @@ public class Generator {
 			throws IOException, XMLParserException, InvalidConfigurationException, SQLException, InterruptedException {
 		List<String> warnings = new ArrayList<String>();
 		boolean overwrite = true;
-		File configFile = new File("generator.xml");
+		InputStream inputStream = Generator.class.getResourceAsStream("/generator.xml");
 		ConfigurationParser cp = new ConfigurationParser(warnings);
-		Configuration config = cp.parseConfiguration(configFile);
+		Configuration config = cp.parseConfiguration(inputStream);
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
 		MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
 		myBatisGenerator.generate(null);

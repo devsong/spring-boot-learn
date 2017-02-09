@@ -7,7 +7,7 @@
         http://code.alibabatech.com/schema/dubbo  
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	<dubbo:application name="guanjia-exw-invoice" />
-	<dubbo:registry id="zk" protocol="zookeeper" address="10.123.134.142:2181" />
+	<dubbo:registry id="zk" protocol="zookeeper" address="10.123.134.137:2181" />
 
 	<!-- 后端接口服务 -->
 	<dubbo:reference id="backEndService"

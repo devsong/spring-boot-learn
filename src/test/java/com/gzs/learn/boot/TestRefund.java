@@ -1,4 +1,4 @@
-package com.gzs.learn.boot.jpa;
+package com.gzs.learn.boot;
 
 import org.junit.After;
 import org.junit.Before;
