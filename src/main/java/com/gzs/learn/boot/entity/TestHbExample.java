@@ -66,9 +66,9 @@ public class TestHbExample {
 
     /**
      * @author guanzhisong
- * @date 2017-02-10 10:58:38
+ * @date 2017-02-17 15:12:59
      *
-     * @mbg.generated 2017-02-10 10:58:38
+     * @mbg.generated 2017-02-17 15:12:59
      */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
@@ -571,9 +571,9 @@ public class TestHbExample {
 
     /**
      * @author guanzhisong
- * @date 2017-02-10 10:58:38
+ * @date 2017-02-17 15:12:59
      *
-     * @mbg.generated 2017-02-10 10:58:38
+     * @mbg.generated 2017-02-17 15:12:59
      */
     public static class Criterion {
         private String condition;

@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.gzs.learn.boot.aspectj.TestAspect;
 import com.gzs.learn.boot.entity.TestHb;
 import com.gzs.learn.boot.entity.TestHbExample;
 import com.gzs.learn.boot.mapper.TestHbCustomMapper;
@@ -29,6 +30,9 @@ public class SpringMapper {
 	@Resource
 	TestHbCustomMapper testHbCustomMapper;
 
+	@Resource
+	TestAspect testAspect;
+	
 	@Test
 	public void testHb() {
 		try {
@@ -60,5 +64,10 @@ public class SpringMapper {
 		example.createCriteria().andPhoneEqualTo("18202794850").andIdEqualTo(1);
 		List<TestHb> hbs = testHbMapper.selectByExample(example);
 		System.out.println(hbs.size());
+	}
+	
+	@Test
+	public void testAspect(){
+	    testAspect.test();
 	}
 }

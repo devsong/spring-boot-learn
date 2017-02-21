@@ -29,6 +29,7 @@ public class TestSerializable {
 	public void testReadObject() throws FileNotFoundException, IOException, ClassNotFoundException {
 		ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename));
 		Serializable s = (Serializable) in.readObject();
+		// Serializable1 s = (Serializable1) in.readObject();
 		System.out.println(s.getName());
 		// System.out.println(s.getTest());
 		in.close();
@@ -38,6 +39,14 @@ public class TestSerializable {
 
 @Data
 class Serializable implements java.io.Serializable {
+	private static final long serialVersionUID = 1L;
+	private String name;
+	private String test;
+}
+
+@Data
+class Serializable1 implements java.io.Serializable {
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String test;
 }

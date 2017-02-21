@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @author guanzhisong
- * @date 2017-02-10 10:58:38
+ * @date 2017-02-17 15:12:59
  */
 public class TestHb implements java.io.Serializable {
     // 主键id,自增
